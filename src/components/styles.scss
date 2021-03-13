@@ -433,6 +433,7 @@ nav {
     h1 {
       text-align: center;
       padding: 10% 0;
+      padding-top: 15%;
       font-size: 10em;
       letter-spacing: 15px;
       animation: title 1s;
@@ -507,7 +508,7 @@ nav {
   .text_container {
     width: 40%;
     h2 {
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
     }
   }
   @media (max-width: 900px) {
@@ -614,11 +615,11 @@ footer {
 }
 @keyframes title {
   from {
-    transform: translateY(10%);
+    // transform: translateY(10%);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    // transform: translateY(0);
     opacity: 1;
   }
 }

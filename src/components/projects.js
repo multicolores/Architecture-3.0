@@ -22,13 +22,13 @@ const Project = (props) => {
                 </div>
             </header> */}
             <section className="project_header container">
-                    <h1>{props.title}</h1>
+                    <h1 data-scroll data-scroll-speed="2">{props.title}</h1>
 
                 <div className="big_image">
                     <BigImage alt="image" filename={props.image_url} />
                 </div>
             </section>
-            <div className="big_p" id="a_propos">
+            <div className="big_p" id="a_propos" data-scroll data-scroll-speed="1.5">
                 <p>{props.paragraphe2}</p>
             </div>
             <div className="gallery imgs_1">
