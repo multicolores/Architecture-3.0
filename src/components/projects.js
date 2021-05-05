@@ -25,15 +25,33 @@ const Project = (props) => {
                     <h1 data-scroll data-scroll-speed="2">{props.title}</h1>
 
                 <div className="big_image">
+                    <div className="img_container_loco" data-scroll data-scroll-speed="-1.7">
                     <BigImage alt="image" filename={props.image_url} />
+                    </div>
                 </div>
             </section>
-            <div className="big_p" id="a_propos" data-scroll data-scroll-speed="1.5">
+
+
+            <div className="big_p" id="a_propos" data-scroll data-scroll-speed="1.25">
                 <p>{props.paragraphe2}</p>
             </div>
             <div className="gallery imgs_1">
                     <BigImage alt="image" filename={props.image_url_1} />
             </div>
+            
+            <section className="project_text">
+                <div className="img">
+                        {/* <div className="border top" data-scroll data-scroll-speed="2"></div> */}
+                        <div data-scroll data-scroll-speed="-1.7">
+                        <BigImage alt="image" filename={props.image_url_3} />
+                        </div>
+                        {/* <div className="border bottom" data-scroll data-scroll-speed="1.2"></div> */}
+                </div>
+                <div className="text" id="a_propos" data-scroll data-scroll-speed="2">
+                    <p>{props.paragraphe}</p>
+                </div> 
+            </section>
+
             <div className="gallery imgs_2">
                     <Image alt="image" filename={props.image_url_2} />
                     <Image alt="image" filename={props.image_url_3} />
