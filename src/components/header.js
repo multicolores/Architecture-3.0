@@ -22,7 +22,7 @@ const Header = () => (
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem`,
-          height: `80px`,
+          height: `60px`,
         }}
       >
             <div>
