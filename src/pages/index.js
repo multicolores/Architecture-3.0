@@ -40,8 +40,13 @@ const IndexPage = () => {
           <Drag />
         </section> */}
 
+        <h1 className="workTitle">works</h1>
+
         <section className="work_section">
-          <WorkImage image="image1.jpg" work_name="Projet 1" />
+          <WorkImage image="image1.jpg" work_name="Projet 1" url="/project_1"/>
+          <WorkImage image="image2.jpg" work_name="Projet 2" url="/project_2"/>
+          <WorkImage image="image3.jpg" work_name="Projet 3" url="/project_3"/>
+          <WorkImage image="image4.jpg" work_name="Projet 4" url="/project_4"/>
         </section>
 
         <section className="a_propos" id="about">
@@ -58,12 +63,11 @@ const IndexPage = () => {
 
 export const WorkImage = (props) => {
   return (
-    <div className="work_container">
-      <h3>{props.work_name}</h3>
-
-      <div className="ImgContainer"><ImageParallax alt="image" filename={props.image} /></div>
-
-      <hr />
+    <div className="work_item">
+      <Link to={props.url}>
+      <h3 data-scroll data-scroll-speed="3">{props.work_name}</h3>
+      <div className="ImgContainer"><Image alt="image" filename={props.image} /></div>
+      </Link>
     </div>
 
   );

@@ -432,14 +432,43 @@ nav {
 //   }
 // }
 //! WORK HOMEPAGE
+.workTitle {
+  text-align: center;
+  font-size: 10em;
+  padding: 7% 0;
+  font-family: "Spactral";
+  font-weight: 100;
+  color: $font_color;
+  letter-spacing: 10px;
+}
 .work_section {
   margin: 0% 10%;
-  .work_container {
+  .work_item {
+    background: white;
+    position: relative;
+    h3 {
+      position: absolute;
+      top: 55%;
+      left: 4%;
+      transform: translateY(-50%);
+      font-size: 4em;
+      z-index: 2;
+      color: white;
+      mix-blend-mode: difference;
+    }
     .ImgContainer {
       overflow: hidden;
-      padding: 0 10%;
+      padding: 10% 15%;
       width: 100%;
-      height: 500px;
+      max-height: 600px;
+    }
+    span {
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      padding-right: 15%;
+      z-index: 2;
+      letter-spacing: 2px;
     }
   }
 }
