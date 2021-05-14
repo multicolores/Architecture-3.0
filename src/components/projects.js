@@ -62,8 +62,8 @@ const Project = (props) => {
             <div className="gallery imgs_4">
                     <Image alt="image" filename={props.image_url_2} />
                     <Image alt="image" filename={props.image_url_5} />
-                    <Image alt="image" filename={props.image_url_3} />
-                    <Image alt="image" filename={props.image_url_1} />
+                    {/* <Image alt="image" filename={props.image_url_3} />
+                    <Image alt="image" filename={props.image_url_1} /> */}
             </div>
 
             <div className="drag_container-projects container">

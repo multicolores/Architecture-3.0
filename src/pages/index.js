@@ -40,7 +40,7 @@ const IndexPage = () => {
           <Drag />
         </section> */}
 
-        <h1 className="workTitle">works</h1>
+        <h1 className="workTitle" id="works">works</h1>
 
         <section className="work_section">
           <WorkImage image="image1.jpg" work_name="Projet 1" url="/project_1"/>

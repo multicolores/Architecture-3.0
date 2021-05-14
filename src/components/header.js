@@ -31,8 +31,8 @@ const Header = () => (
                 </Link>
             </div>
             <div>
-                <Link to="/project_1">
-                    Work
+                <Link to="/#works">
+                    Works
                 </Link>
                 {/* <Link to="/gallery">
                     Gallery
