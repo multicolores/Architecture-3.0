@@ -13,7 +13,7 @@ const Image = props => (
               name
               childImageSharp {
                 fluid(maxWidth: 600, quality:50) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
             }
